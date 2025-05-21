@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Яна Седегова — QA Engineer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    .section {
+      min-height: 100vh;
+      position: relative;
+      background: url('https://img.freepik.com/free-photo/fantasy-endless-hole-landscape_23-2151639679.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3.5em;
+      margin-bottom: 0.5em;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    p {
+      font-size: 1.6em;
+      margin-bottom: 1.5em;
+      animation: fadeInDown 2s ease;
+    }
+
+    .btn {
+      padding: 0.8rem 2rem;
+      font-size: 1em;
+      color: white;
+      background-color: #6c63ff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      animation: fadeIn 2.5s ease-in;
+    }
+
+    .btn:hover {
+      background-color: #5548d9;
+    }
+
+    a.contact-link {
+      display: block;
+      color: #ffffff;
+      font-size: 1.2em;
+      margin: 0.5rem 0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a.contact-link:hover {
+      color: #cccccc;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="section">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Привет! Меня зовут Яна Седегова</h1>
+      <p>QA Engineer с вниманием к деталям и любовью к качеству</p>
+      <a href="#contacts" class="btn">Контакты</a>
+    </div>
+  </section>
+
+  <section id="contacts" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>Свяжитесь со мной</h2>
+      <a href="https://t.me/SedegovaY" target="_blank" class="contact-link">Написать в Telegram</a>
+      <a href="mailto:yasedegova@yandex.ru" class="contact-link">Написать на email</a>
+    </div>
+  </section>
+
+</body>
+</html>
